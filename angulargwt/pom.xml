@@ -23,12 +23,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
 			</plugin>			
 			<plugin>
 				<groupId>net.ltgt.gwt.maven</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
 				<configuration>
 					<moduleName>com.google.gwt.angular.angulargwt</moduleName>
+					<sourceLevel>1.7</sourceLevel>
 				</configuration>
 			</plugin>
 			<plugin>

@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<version>9</version>
 	</parent>
 
 	<groupId>com.github.h0ru5.gwt</groupId>
@@ -21,6 +21,8 @@
 		<gwtVersion>2.6.0</gwtVersion>
 		<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
 	<scm>
@@ -49,8 +51,8 @@
 						<execution>
 							<configuration>
 								<outputGen>true</outputGen>
-								<sourceLevel>1.7</sourceLevel>
 								<strict>true</strict>
+								<sourceLevel>1.7</sourceLevel>
 							</configuration>
 							<goals>
 								<goal>generate-module</goal>
